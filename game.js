@@ -1,6 +1,6 @@
 // Game Constants & Variables
 let inputDir = {x: 0, y: 0}; 
-let speed = 8;
+let speed = 5;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [{x: 15, y: 15}];
@@ -44,7 +44,9 @@ function gameEngine(){
 
     // If you have eaten the food, increment the score and regenerate the food
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
+        speed++;
           score += 1;
+          
         if(score>highscoreval){
             highscoreval = score;
             localStorage.setItem("highscore", JSON.stringify(highscoreval));
