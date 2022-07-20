@@ -63,8 +63,14 @@ h1{
     border-radius: 8px;
 }
 
-.food{
+.stone{
     background: rgb(185, 41, 41);
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
+
+.food{
+    background: rgb(61, 182, 31);
     border: .25vmin solid white;
     border-radius: 8px;
 }
